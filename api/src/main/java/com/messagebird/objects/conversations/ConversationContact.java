@@ -12,6 +12,7 @@ public class ConversationContact {
     private String id;
     private String href;
     private String msisdn;
+    private String displayName;
     private String firstName;
     private String lastName;
     private Map<String, Object> customDetails;
@@ -40,6 +41,14 @@ public class ConversationContact {
 
     public void setMsisdn(final String msisdn) {
         this.msisdn = msisdn;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(final String displayName) {
+        this.displayName = displayName;
     }
 
     public String getFirstName() {
@@ -88,6 +97,7 @@ public class ConversationContact {
                 "id='" + id + '\'' +
                 ", href='" + href + '\'' +
                 ", msisdn='" + msisdn + '\'' +
+                ", displayNam='" + displayName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", customDetails=" + customDetails +
